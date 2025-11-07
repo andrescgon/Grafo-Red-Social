@@ -1,39 +1,12 @@
 # Análisis de Grafo Social - Instagram
 
-**Autores:**
+**Integrantes:**
 - Andres Castro Gonzalez
 - Juan Hurtado Herrera
 - Franco Sebastian Comas Rey
 
-**Fecha:** Noviembre 2025
-
-**Institución:** Universidad Sergio Arboleda
-
 ---
 
-## Tabla de Contenidos
-
-1. [Introducción](#introducción)
-2. [Metodología](#metodología)
-3. [Estadísticas Generales](#estadísticas-generales)
-4. [Análisis de Comportamiento y Gustos](#análisis-de-comportamiento-y-gustos)
-5. [Análisis de Conexiones Sociales](#análisis-de-conexiones-sociales)
-6. [Hallazgos Principales](#hallazgos-principales)
-7. [Conclusiones](#conclusiones)
-8. [Archivos del Proyecto](#archivos-del-proyecto)
-9. [Cómo Ejecutar el Proyecto](#cómo-ejecutar-el-proyecto)
-
----
-
-## Introducción
-
-Este proyecto analiza las redes sociales de tres estudiantes universitarios usando datos exportados de Instagram. El objetivo es identificar patrones de comportamiento, gustos compartidos y conexiones en común dentro del círculo social, con especial énfasis en compañeros de universidad.
-
-Los datos fueron procesados usando **NetworkX** para la construcción de grafos sociales y análisis de métricas de centralidad, permitiendo visualizar las relaciones entre las tres personas analizadas.
-
----
-
-## Metodología
 
 ### Datos Recolectados
 
@@ -49,7 +22,6 @@ Para cada persona se analizaron tres categorías de información:
 - **NetworkX:** Construcción y análisis de grafos
 - **Pandas:** Procesamiento de datos
 - **Matplotlib & Plotly:** Visualizaciones estáticas e interactivas
-- **Script personalizado:** `build_instagram_graphs.py` y `analyze_social_data.py`
 
 ### Proceso de Análisis
 
@@ -123,7 +95,7 @@ El análisis reveló **21 tópicos en común** entre las tres personas, lo que r
 **Otros:**
 - Ground transportation
 - Visual arts
-- Travel destinations (compartido por Andrés y Juan)
+- Travel destinations 
 
 ### Análisis de Similitud por Pares
 
@@ -134,7 +106,7 @@ Destacan intereses compartidos en:
 
 #### Andrés ↔ Juan: 24 tópicos comunes (75% de Andrés, 58.5% de Juan)
 Destacan intereses compartidos en:
-- Boxing (más específico que combat sports general)
+- Boxing 
 - Clothing & accessories
 
 #### Franco ↔ Juan: 31 tópicos comunes (60.8% de Franco, 75.6% de Juan)
@@ -173,10 +145,6 @@ Las únicas 5 cuentas que las tres personas siguen son:
 
 ### Análisis Crítico
 
-Proporción Universidad vs Entretenimiento:
-- Cuentas universitarias: 4 de 5 (80%)
-- Influencers/Entretenimiento: 1 de 5 (20%)
-
 Este resultado es altamente significativo y confirma la hipótesis inicial: la gran mayoría de conexiones compartidas provienen del entorno universitario.
 
 ### Cuentas Compartidas por Pares
@@ -185,21 +153,22 @@ Este resultado es altamente significativo y confirma la hipótesis inicial: la g
 
 Análisis por categoría:
 
-Compañeros/Universidad (50%):
+Compañeros/Universidad (70%):
 - @gutierreztovar_jefferson
 - @nigg_.1
 - @santigl_0016
 - @usergioarboleda
 - @confesiones.usergioarboleda (página de confesiones de la universidad)
-
-YouTubers/Streamers (50%):
-- @auronplay
-- @elrubiuswtf
-- @vegetta777
 - @andresmr32
 - @juaaan_f
 
-Conclusión: Equilibrio 50/50 entre contenido universitario y entretenimiento gaming hispanohablante.
+YouTubers/Streamers (30%):
+- @auronplay
+- @elrubiuswtf
+- @vegetta777
+
+
+Conclusión: 70/30 entre contenido universitario y entretenimiento gaming hispanohablante.
 
 #### Andrés ↔ Juan: 17 cuentas en común
 
@@ -261,11 +230,6 @@ Los únicos influencers compartidos son YouTubers/streamers de videojuegos en es
 - ElRubiusOMG: YouTuber español de gaming
 - Vegetta777: YouTuber español de Minecraft y gaming
 
-Esto sugiere:
-- Consumo de contenido en español (no angloparlante)
-- Interés común en la comunidad gaming hispana
-- Posiblemente juegan o comentan sobre contenido de estos creadores
-
 ### 3. Patrones de Comportamiento Social
 
 Juan: El "conector social diverso"
@@ -275,7 +239,7 @@ Juan: El "conector social diverso"
 - Comportamiento más diverso: sigue cuentas más allá del círculo universitario, familiar y del colegio
 - Rol: Hub social, probablemente líder de opinión en el grupo con intereses variados
 
-Franco: El "curador selectivo"
+Franco: El "selectivo"
 - Menos conexiones totales (88 siguiendo, 44 seguidores)
 - Mayor diversidad de intereses (51 tópicos)
 - Rol: Usuario selectivo que sigue contenido específico de calidad
@@ -290,8 +254,6 @@ Andrés: El "conector cercano"
 
 Los 21 tópicos compartidos por todos revelan un perfil generacional claro:
 
-Generación Z universitaria colombiana:
-- Apasionados por fútbol (deporte nacional)
 - Gamers casuales (battle royale, survival)
 - Interesados en fitness y gimnasio
 - Amantes de mascotas
@@ -309,7 +271,7 @@ La Universidad Sergio Arboleda funciona como el principal grafo social de conexi
 
 ### 6. Diferencias en Patrones de Seguimiento
 
-Andrés vs Juan - Comportamientos contrastantes:
+Andrés vs Juan vs Franco - Comportamientos contrastantes:
 
 Andrés:
 - Enfoque en círculo cercano: universidad, familia y colegio
@@ -317,11 +279,15 @@ Andrés:
 - Menor diversidad en tipos de cuentas seguidas
 
 Juan:
-- Mayor diversidad en cuentas seguidas
+- Mayor diversidad en cuentas seguidas 
 - Va más allá del círculo universitario/familiar/escolar
 - Sigue cuentas de diversos ámbitos e intereses
 - Comportamiento más exploratorio en redes sociales
 
+Franco:
+- Enfoque mayormente en familia y colegio
+- Menor numero de conexiones
+- Menor diversidad en tipos de cuentas seguidas
 ---
 
 ## Conclusiones
@@ -340,34 +306,31 @@ El entorno universitario de la Universidad Sergio Arboleda es el factor determin
 2. Perfil Cultural Cohesivo
    - Los tres comparten 21 tópicos de interés (deportes, gaming, moda, mascotas)
    - Consumen contenido de creadores hispanohablantes
-   - Muestran patrones típicos de estudiantes universitarios colombianos de Generación Z
 
 3. Roles Sociales Diferenciados
    - Juan: Conector social con mayor influencia y diversidad en cuentas seguidas
    - Franco: Curador selectivo con intereses diversos
-   - Andrés: Enfocado en círculo cercano (universidad, familia, colegio)
+   - Andrés: Enfocado en círculo cercano 
 
 4. Influencia Gaming Moderada
    - Aunque comparten interés en videojuegos, solo 3 creadores de contenido gaming son seguidos por múltiples personas
    - El gaming es un tema de conversación común pero no el nexo principal
 
 5. Importancia de la Comunidad Universitaria
-   - Las cuentas de confesiones universitarias y la cuenta oficial demuestran sentido de pertenencia
    - El grafo social se construye primariamente en el campus universitario
    - Las redes digitales reflejan las redes físicas del entorno académico
 
 6. Comportamientos Diferenciados de Seguimiento
    - Andrés mantiene una red centrada en relaciones personales cercanas
    - Juan explora contenido más allá de su círculo inmediato
+   - Franco mantiene una red centrada en relaciones personales cercanas
    - Esta diferencia muestra distintos usos de las redes sociales dentro del mismo grupo social
 
 ### Reflexión Final
 
 Este análisis demuestra que, a pesar de vivir en la era digital con acceso global a contenido, las conexiones físicas y geográficas (universidad, familia, colegio) siguen siendo el factor más importante en la construcción de redes sociales.
 
-La universidad no solo es un lugar de aprendizaje académico, sino el principal nodo de conexión social para estudiantes, superando ampliamente la influencia de celebridades, influencers o intereses individuales.
-
-Los datos confirman que compartimos más con quienes compartimos espacio físico que con quienes compartimos gustos digitales. Sin embargo, también revelan que existen diferencias individuales en cómo cada persona utiliza las redes sociales: algunos las usan principalmente para mantener conexiones cercanas (Andrés), mientras que otros las utilizan también para explorar contenido diverso (Juan).
+Los datos confirman que compartimos más con quienes compartimos espacio físico que con quienes compartimos gustos digitales. Sin embargo, también revelan que existen diferencias individuales en cómo cada persona utiliza las redes sociales: algunos las usan principalmente para mantener conexiones cercanas (Andres, Franco), mientras que otros las utilizan también para explorar contenido diverso (Juan).
 
 ---
 
@@ -426,15 +389,3 @@ python analizar_datos_sociales.py
 Abrir `out/grafo_interactivo.html` en navegador web
 
 ---
-
-## Referencias
-
-- NetworkX Documentation: https://networkx.org/
-- Instagram Data Export: https://help.instagram.com/
-- Plotly Python Graphing Library: https://plotly.com/python/
-
----
-
-Universidad Sergio Arboleda - Análisis de Redes Sociales - 2025
-
-Este README fue generado como parte del análisis de grafos sociales para el curso de Estructuras de Datos.
