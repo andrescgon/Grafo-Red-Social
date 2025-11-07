@@ -69,6 +69,13 @@ Para cada persona se analizaron tres categorías de información:
 ### Grafo Unificado
 <img width="2340" height="1620" alt="image" src="https://github.com/user-attachments/assets/848ba50b-63a6-46d8-80ff-3fcdc1bb3d1b" />
 
+### Grafo Con Numero de Conexiones 
+<img width="840" height="700" alt="image" src="https://github.com/user-attachments/assets/6c7a02b9-1f3d-4929-a98c-51efde344f22" />
+
+### Visualizar Grafo Interactivo
+- [Ver Grafo Interactivo](https://andrescgon.github.io/Grafo-Red-Social/out/grafo_interactivo.html)
+- O abrir localmente: `out/grafo_interactivo.html` en navegador web
+
 ### Tópicos Compartidos por TODAS las Personas (21 tópicos)
 
 El análisis reveló **21 tópicos en común** entre las tres personas, lo que representa:
@@ -347,6 +354,26 @@ Los datos confirman que compartimos más con quienes compartimos espacio físico
 
 ---
 
+## Cómo Agregar Datos de Otra Persona
+
+### Formato de nombres de archivos
+
+Los archivos deben estar en la carpeta `data/` y seguir este patrón de nombres:
+
+data/nombre_followers.json data/nombre_following.json data/nombre_topics.json
+
+**Ejemplo:** Para agregar a una persona llamada "pepe":
+
+data/pepe_followers.json data/pepe_following.json data/pepe_topics.json
+
+Pasos para agregar una nueva persona
+- Exporta los datos desde Instagram 
+- Copia los 3 archivos JSON a la carpeta data/
+- Renómbralos siguiendo el patrón: nombre_followers.json, nombre_following.json, nombre_topics.json
+- Ejecuta: python generar_grafos_instagram.py
+- El script detectará automáticamente la nueva persona y la incluirá en el análisis
+- Importante: El nombre del archivo (el prefijo antes de _followers, _following o _topics) debe ser idéntico para los 3 archivos de cada persona.
+
 ## Archivos del Proyecto
 
 ### Código Fuente
@@ -397,8 +424,5 @@ python generar_grafos_instagram.py
 ```bash
 python analizar_datos_sociales.py
 ```
-
-### Visualizar Grafo Interactivo
-Abrir `out/grafo_interactivo.html` en navegador web
 
 ---
