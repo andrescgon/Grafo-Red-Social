@@ -2,7 +2,7 @@
 
 **Integrantes:**
 - Andres Castro Gonzalez
-- Juan Hurtado Herrera
+- Juan Felipe Hurtado Herrera
 - Franco Sebastian Comas Rey
 
 ---
