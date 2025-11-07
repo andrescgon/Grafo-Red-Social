@@ -3,20 +3,6 @@
 
 """
 Grafo social Instagram (para múltiples personas × {followers, following, topics}) con NetworkX.
-
-Formatos esperados:
-- followers: [ { "string_list_data": [ {"value": "<user>"} ] }, ... ]
-- following: { "relationships_following": [ {"title": "<user>"} , ... ] }
-- topics   : { "topics_your_topics": [ {"string_map_data": {"Name": {"value": "<topic>"}}}, ... ] }
-
-Salida en ./out:
-- grafo_individual_<persona>.png
-- grafo_unificado.png, grafo_unificado.gexf
-- grafo_interactivo.html (interactivo con tooltips y etiquetas fijas de egos)
-- centralidad_<persona>.csv
-- matriz_similitud.csv
-- entidades_compartidas.csv
-- conexiones_entre_personas.png
 """
 
 import argparse
