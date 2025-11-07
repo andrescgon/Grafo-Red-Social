@@ -16,6 +16,7 @@ Para cada persona se analizaron tres categorías de información:
 2. **Following (Siguiendo):** Usuarios que la persona sigue
 3. **Topics (Tópicos/Gustos):** Intereses identificados por Instagram
 
+
 ### Herramientas Utilizadas
 
 - **Python 3.x**
@@ -27,7 +28,7 @@ Para cada persona se analizaron tres categorías de información:
 
 1. Exportación de datos desde Instagram en formato JSON
 2. Procesamiento y normalización de datos
-3. Construcción de grafos individuales (ego-graphs)
+3. Construcción de grafos individuales 
 4. Generación de grafo unificado
 5. Cálculo de métricas de centralidad
 6. Análisis de similitudes y entidades compartidas
@@ -44,6 +45,15 @@ Para cada persona se analizaron tres categorías de información:
 | Franco | 44 | 88 | 28 | 51 |
 | Juan | 239 | 328 | 111 | 41 |
 
+### Grafo Andres
+<img width="2340" height="1620" alt="image" src="https://github.com/user-attachments/assets/4fe39a62-0b5e-4015-99de-6e6fbf92d11a" />
+
+### Grafo Franco
+<img width="2340" height="1620" alt="image" src="https://github.com/user-attachments/assets/efef3a9d-359f-4639-8595-f48d54aa587d" />
+
+### Grafo Juan
+<img width="2340" height="1620" alt="image" src="https://github.com/user-attachments/assets/edde4147-b0a1-4ebf-8eb5-82fb9aa4a392" />
+ 
 ### Observaciones Iniciales
 
 - Juan tiene la red social más amplia, con 239 seguidores y 328 cuentas seguidas
@@ -55,6 +65,9 @@ Para cada persona se analizaron tres categorías de información:
 ---
 
 ## Análisis de Comportamiento y Gustos
+
+### Grafo Unificado
+<img width="2340" height="1620" alt="image" src="https://github.com/user-attachments/assets/848ba50b-63a6-46d8-80ff-3fcdc1bb3d1b" />
 
 ### Tópicos Compartidos por TODAS las Personas (21 tópicos)
 
